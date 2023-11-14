@@ -1,17 +1,24 @@
 from pretty_midi import PrettyMIDI
+import sys
+import os
 
-paths = [
-    './output/bass.mid',
-    './output/drums.mid',
-    './output/other.mid',
-    './output/piano.mid',
-]
+paths = []
 
 # midi input file path is /content/song_files/{pipeline_name}/*
     # pipeline_name will be provided via command line args 
     # where pipeline_name is in {spleeter, demucs, mt3, basic_pitch}
     # where '*' represents each midi file in /content/[pipeline_name]/
 
+pipeline_name = sys.argv[1]
+
+# loop the /content/song_files/{pipeline_name}/ folder and append path of each midi file into it
+target_folder = f'./content/song_files/{pipeline_name}/'
+for midi_filename in os.listdir(target_folder):
+    f = os.path.join(target_folder, midi_filename)
+    # checking if it is a file
+    if os.path.isfile(f):
+        paths.append(f)
+print(paths)
 # Load MIDI file into PrettyMIDI object
 midi_tracks = [PrettyMIDI(p) for p in paths]
 
