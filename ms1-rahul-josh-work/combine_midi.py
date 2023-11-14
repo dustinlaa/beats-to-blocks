@@ -18,7 +18,7 @@ for midi_filename in os.listdir(target_folder):
     # checking if it is a file
     if os.path.isfile(f):
         paths.append(f)
-print(paths)
+
 # Load MIDI file into PrettyMIDI object
 midi_tracks = [PrettyMIDI(p) for p in paths]
 
