@@ -12,7 +12,7 @@ paths = []
 pipeline_name = sys.argv[1]
 
 # loop the /content/song_files/{pipeline_name}/ folder and append path of each midi file into it
-target_folder = f'./content/song_files/{pipeline_name}/'
+target_folder = f'/content/song_files/{pipeline_name}/'
 for midi_filename in os.listdir(target_folder):
     f = os.path.join(target_folder, midi_filename)
     # checking if it is a file
@@ -28,6 +28,5 @@ for track in midi_tracks:
     for instrument in track.instruments:
         combined_midi.instruments.append(instrument)
 
-combined_midi.write('./output/combined_no_piano_vocals.mid')
-
-# write to midi file in /content/song_files/combined_midi_output/
+# write to ./content/song_files/combined_midi_output/combined_midi.mid
+combined_midi.write('/content/song_files/combined_midi/combined_midi.mid')
