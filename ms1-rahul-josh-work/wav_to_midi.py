@@ -17,11 +17,11 @@ input_paths = [
 ]
 
 output_paths = [
-    './output/bass.mid',
-    './output/drums.mid',
-    './output/other.mid',
-    './output/piano.mid',
-    './output/vocals.mid'
+    '/content/song_files/basic_pitch/bass.mid',
+    '/content/song_files/basic_pitch/drums.mid',
+    '/content/song_files/basic_pitch/other.mid',
+    '/content/song_files/basic_pitch/piano.mid',
+    '/content/song_files/basic_pitch/vocals.mid'
 ]
 
 try:

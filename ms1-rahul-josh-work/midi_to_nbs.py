@@ -27,10 +27,9 @@ nbs_instr_names = {
 }
 
 
-# get midi input from /content/song_files/combined_midi_output/combined.mid
+# get midi input from /content/song_files/combined_midi/combined_midi.mid
 
-midi_file = PrettyMIDI('./output/winter_wind.mid')
-print(midi_file.instruments)
+midi_file = PrettyMIDI('/content/song_files/combined_midi/combined_midi.mid')
 
 # in many songs (and thus midi files), notes are played at the same time (same onset time)
 # in nbs, layers are used when multiple notes are played at the same time
@@ -95,7 +94,7 @@ for tick in range(max_num_ticks + 1):
                     exit(-1)
 
 nbs_file = pynbs.new_file(
-    song_name='Winter Wind', 
+    song_name='song', 
     tempo=20.00,
     song_layers=layer_offsets[-1],
     song_length=max_num_ticks    
@@ -103,6 +102,7 @@ nbs_file = pynbs.new_file(
 nbs_file.layers = [pynbs.Layer(id=i, name='', lock=False, volume=100, panning=0) for i in range(layer_offsets[-1])]
 nbs_file.instruments = [pynbs.Instrument(id=i, name=nbs_instr_names[i], file=nbs_instr_files[i], pitch=45, press_key=True) for i in nbs_instrument_set]
 nbs_file.notes.extend(list_of_notes)
-nbs_file.save("winter_wind_nbs.nbs", version=5)
+# write to nbs_output.nbs in /content/song_files/nbs_output/combined_nbs.nbs
+nbs_file.save("/content/song_files/nbs_output/combined_nbs.nbs", version=5)
 
-# write to nbs_output.nbs in /content/song_files/nbs_output
+
