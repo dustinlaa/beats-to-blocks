@@ -1,6 +1,25 @@
 from pretty_midi import PrettyMIDI
+from pathlib import Path
 import sys
 import os
+
+stem_info = {
+    'bass': (33, False, 'bass'),
+    'piano': (114, True, 'drums'),
+    'drums': (2, False, 'piano'),
+    'other': (88, False, 'other')
+}
+
+def get_updated_midi(p):
+    updatedMidi = PrettyMIDI(p)
+    instr_type = Path(p).stem
+
+    updatedMidi.instruments[0].program = stem_info[instr_type][0]
+    updatedMidi.instruments[0].is_drum = stem_info[instr_type][1]
+    updatedMidi.instruments[0].name = stem_info[instr_type][2]
+
+    return updatedMidi
+
 
 paths = []
 
@@ -20,7 +39,7 @@ for midi_filename in os.listdir(target_folder):
         paths.append(f)
 
 # Load MIDI file into PrettyMIDI object
-midi_tracks = [PrettyMIDI(p) for p in paths]
+midi_tracks = [get_updated_midi(p) for p in paths]
 
 combined_midi = PrettyMIDI()
 

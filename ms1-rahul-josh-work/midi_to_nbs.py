@@ -2,11 +2,9 @@ import pynbs
 from pretty_midi import PrettyMIDI
 
 midi_to_nbs_instrs = {
-    0: 0, # piano
     2: 0, # piano
     114: 3, # drums
     33: 1, # bass
-    78: 6, # vocals 
     88: 9 # other
 }
 
