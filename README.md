@@ -8,7 +8,7 @@
 - To run, create a folder in Google Drive titled "beats-to-blocks".
 - Create a copy of the file titled "beats-to-blocks_v1_0.iypnb" and use it for the following. 
 - Mount Drive and upload a .wav file in the second cell titled "Upload Audio (only if file has not been previously uploaded)".
-  - If you have already uploaded a .wav file, instead run the third cell titled "Choose output folder" and type in the same name as your .wav file.
+  - If you have already uploaded a .wav file, instead run the third cell titled "Choose output folder" and type in the same name as your .wav file. ex. song.wav
 - Run all the following cells up to "Pipeline #5 NBS to Audio" to activate the Demucs and Spleeter Stem Splitting, MT3 and Spotify Basic Pitch MIDI Transcription, Combine MIDI functions, MIDI to NBS Transcriptions, and finally NBS to Audio output to obtain the final .wav files.
   - Note: This can be a very long process (over an hour for a minute .wav file).
 
