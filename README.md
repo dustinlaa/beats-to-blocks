@@ -5,7 +5,7 @@
 - Dr. Mark Cartwright
 
 #  Instructions
-- To run, create a folder in Drive titled "beats-to-blocks".
+- To run, create a folder in Google Drive titled "beats-to-blocks".
 - Create a copy of the file titled "beats-to-blocks_v1_0.iypnb" and use it for the following. 
 - Mount drive and upload a .wav file in the second cell which is titled "Upload Audio (only if file has not been previously uploaded)".
   - If you have already previously uploaded a .wav file, instead run the third cell which is titled "Choose output folder" and type in exactly the same name as your .wav file.
