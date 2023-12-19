@@ -1,8 +1,8 @@
 # Beats to Blocks - https://beatstoblocks.github.io/
 ## Peter Akdemir (pja4@njit.edu), Dustin La (drl3@njit.edu), Joshua Quizon (jbq2@njit.edu), Rahul Shah (rns22@njit.edu)
-#### CS 485 - Machine Listening
-#### New Jersey Institute of Technology
-#### Dr. Mark Cartwright
+- CS 485 - Machine Listening
+- New Jersey Institute of Technology
+- Dr. Mark Cartwright
 
 #  Instructions
 - To run, create a folder in Drive titled "beats-to-blocks"
