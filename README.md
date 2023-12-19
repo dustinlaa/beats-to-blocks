@@ -7,19 +7,20 @@
 #  Instructions
 - To run, create a folder in Google Drive titled "beats-to-blocks".
 - Create a copy of the file titled "beats-to-blocks_v1_0.iypnb" and use it for the following. 
-- Mount drive and upload a .wav file in the second cell which is titled "Upload Audio (only if file has not been previously uploaded)".
-  - If you have already previously uploaded a .wav file, instead run the third cell which is titled "Choose output folder" and type in exactly the same name as your .wav file.
+- Mount Drive and upload a .wav file in the second cell titled "Upload Audio (only if file has not been previously uploaded)".
+  - If you have already uploaded a .wav file, instead run the third cell titled "Choose output folder" and type in the same name as your .wav file.
 - Run all the following cells up to "Pipeline #5 NBS to Audio" to activate the Demucs and Spleeter Stem Splitting, MT3 and Spotify Basic Pitch MIDI Transcription, Combine MIDI functions, MIDI to NBS Transcriptions, and finally NBS to Audio output to obtain the final .wav files.
   - Note: This can be a very long process (over an hour for a minute .wav file).
 
 - All files created are stored in your mounted drive under "beats-to-blocks/(your song name)".
 
 # To import into Minecraft (1.20.2):
-  - Must have ran all previous cells and successfully finished.
-  - For Pipeline 1, use the cell that specifies its for Pipeline 1.
+  - Must have run all previous cells and successfully finished.
+     - If all cells are finished and are coming back to a session, use the "Choose output folder" cell and type in the same name as your .wav file. 
+  - For Pipeline 1, use the cell that specifies it for Pipeline 1.
   - For Pipelines #2-5, use the other cell and type in the wanted pipeline.
-  - Download the created .nbs file and import into Open Note Block Studio.
+  - Download the created .nbs file and import it into Open Note Block Studio.
   - Export as Schematic.
   - Put in the desired world's folder in the (world)/generated/minecraft/structures.
-    - Create these directories if they did not already exist
+    - Create these directories if they do not already exist
   - Use a structure block to load the schematic into the world.
