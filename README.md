@@ -13,7 +13,7 @@
 
 - All files created are stored in your mounted drive under "beats-to-blocks/(your song name)".
 
-- To import into Minecraft:
+# To import into Minecraft:
   - Must have ran all previous cells and successfully finished
   - For Pipeline 1, use the cell that specifies its for Pipeline 1
   - For Pipelines #2-5, use the other cell and type in the wanted pipeline
