@@ -8,7 +8,7 @@
 ## Beats-To-Blocks
 - To run, create a folder in Google Drive titled "beats-to-blocks".
    - Also download the files [here](https://drive.google.com/drive/folders/1eooU0Jh0WGtWmmeTF6kklcrCYdIagK3a?usp=sharing) and place in the "beats-to-blocks" directory. 
-- Create a copy of the file titled "beats-to-blocks_v1_0.iypnb" and use it for the following. 
+- Create a copy of the file titled "beats-to-blocks_v1_0.ipynb" and use it for the following. 
 - Mount Drive and upload a .wav file in the second cell titled "Upload Audio (only if file has not been previously uploaded)".
   - If you have already uploaded a .wav file, instead run the third cell titled "Choose output folder" and type in the same name as your .wav file. ex. song.wav
 - Run all the following cells up to "Pipeline #5 NBS to Audio" to activate the Demucs and Spleeter Stem Splitting, MT3 and Spotify Basic Pitch MIDI Transcription, Combine MIDI functions, MIDI to NBS Transcriptions, and finally NBS to Audio output to obtain the final .wav files.
@@ -23,7 +23,7 @@
 - Once all paths are satisfied and contain the correct files, run all cells to preprocess the data and evaluate the performance of each pipeline.
 
 
-# To import into Minecraft (1.20.2):
+## To import into Minecraft (1.20.2):
   - Must have run all previous cells and successfully finished.
      - If all cells are finished and are coming back to a session, use the "Choose output folder" cell and type in the same name as your .wav file. 
   - For Pipeline 1, use the cell that specifies it for Pipeline 1.
