@@ -5,6 +5,7 @@
 - Dr. Mark Cartwright
 
 #  Instructions
+## Beats-To-Blocks
 - To run, create a folder in Google Drive titled "beats-to-blocks".
    - Also download the files [here](https://drive.google.com/drive/folders/1eooU0Jh0WGtWmmeTF6kklcrCYdIagK3a?usp=sharing) and place in the "beats-to-blocks" directory. 
 - Create a copy of the file titled "beats-to-blocks_v1_0.iypnb" and use it for the following. 
@@ -14,6 +15,13 @@
   - Note: This can be a very long process (over an hour for a minute .wav file).
 
 - All files created are stored in your mounted drive under "beats-to-blocks/(your song name)".
+
+## Evaluation
+- Requires a number of different file paths for
+  - Pipeline predictions
+  - Datasets
+- Once all paths are satisfied and contain the correct files, run all cells to preprocess the data and evaluate the performance of each pipeline.
+
 
 # To import into Minecraft (1.20.2):
   - Must have run all previous cells and successfully finished.
